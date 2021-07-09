@@ -96,7 +96,6 @@ toBottom.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-  console.log(window.scrollY);
   let scrollCoord = window.scrollY;
 
   for (i = 0; i < 10; i++) {

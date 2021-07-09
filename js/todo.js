@@ -1,6 +1,6 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("#todo-form input");
-const toDoList = document.getElementById("todo-list");
+const toDoList = document.querySelector(".todo-list");
 
 const TODOS_KEY = "todos";
 let toDos = [];
@@ -11,6 +11,7 @@ function saveTodos() {
 
 function deleteTodo(event) {
   const li = event.target.parentElement;
+  li.classList.add("delete");
   li.remove();
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   saveTodos();
