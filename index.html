@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div class="greeting-frame">
+      <div class="header-container">
+        <button class="toBottom">Bottom</button>
+        <span class="weather-info"> Busan : Clouds / 28℃ </span>
+      </div>
+
+      <div class="main-section">
+        <h2 id="clock" class="clock">00:00:00</h2>
+        <h1 id="greeting" class="hidden"></h1>
+
+        <form id="login-form" class="hidden">
+          <input
+            class="login-input"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="Put your name"
+          />
+        </form>
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <footer>
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </footer>
+    </div>
+
+    <div class="todo-frame">
+      <button class="toTop">Top</button>
+      <form id="todo-form">
+        <input class="todo-input" type="text" placeholder="To Do" required />
+      </form>
+      <div class="list-frame">
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="js/bgcontrol.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+
+    <!--
+    <script src="js/weather.js"></script>
+    -->
+  </body>
+</html>
